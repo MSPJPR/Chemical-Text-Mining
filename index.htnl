@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Text Mining</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chemical Text Mining Tool</h1>
+        
+        <input type="text" id="chemName" placeholder="Enter Chemical Name" onkeyup="showSuggestions(this.value)">
+        <div id="suggestions"></div>
+        <button onclick="searchChemical()">Search</button>
+        
+        <div id="result"></div>
+        
+        <h2>Search History</h2>
+        <ul id="history"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
